@@ -1,0 +1,424 @@
+body, html{
+    margin:0;
+    width:100%;
+	height: 100vh;
+    scroll-behavior: smooth;
+    color:white;
+    font-family: 'Poppins', sans-serif;
+    background-color:#7f6dabff;
+}
+
+a{
+    text-decoration:none;
+    color:white;
+    font-stye:underline;
+}
+
+a:hover{
+    color:#ffce42ff;
+}
+
+ul{
+    text-decoration: none;
+    text-align:center;
+    list-style:none;
+    padding:0;
+}
+
+li{
+    text-decoration:none;
+    text-align:left;
+    margin:0.83em 0;
+}
+
+button{
+    background:none;
+    text-decoration:none;
+    border:none;
+    font-family: 'Poppins', sans-serif;
+    color:white;
+    width:auto;
+    font-size:2.5em;
+    margin:0;
+}
+
+button:hover{
+    color: #ffce42ff;
+    cursor:pointer;
+}
+
+
+.button{
+    background:none;
+    text-decoration:none;
+    border:none;
+    font-family: 'Poppins', sans-serif;
+    color:white;
+    width:auto;
+    font-size:2.5em;
+    margin:0;
+}
+
+.button:hover {
+    color: #ffce42ff;
+    cursor:pointer;
+    /* text-decoration:underline; */
+}
+
+#waiting{
+    margin-top:3%;
+}
+
+#button3{
+    margin-left:61%;
+}
+
+#button5{
+    display:none;
+    /* margin-left:37%; */
+}
+
+#button6{
+    width:200px;
+}
+
+#button7{   
+    width:200px;
+}
+
+#giveUp1{
+    width:200px;
+}
+
+#giveUp2{
+    width:200px;
+}
+
+#buttonSection{
+    display:flex;
+    flex-direction:column;
+    flex-grow:1;
+    /* justify-content: flex-end; */
+    /* height:50%; */
+}
+
+#partDisclaimer{
+    display:none;
+}
+
+
+#menu2{
+    display:flex;
+    flex-direction:column;
+}
+
+#learnMore{
+    width:260px;
+    font-weight:600;
+}
+
+
+
+#dareCompleted{
+    width:200px;
+}
+
+#dareNotCompleted{
+    width:250px;
+}
+
+#dareCompleted2{
+    width:200px;
+}
+
+#dareNotCompleted2{
+    width:250px;
+}
+
+#dareCompleted3{
+    width:200px;
+}
+
+#dareNotCompleted3{
+    width:250px;
+}
+
+/* FORMS */
+
+input[type=text] {
+    background: transparent;
+    border: none;
+    color:white;
+    font-family: 'Poppins', sans-serif;
+    border-bottom: 3px solid white;
+    text-align:center;
+    width:390px;
+    height:40px;
+    font-size: 1.5em;
+    font-style:italic;
+}
+
+input::placeholder {
+    color: white;
+    font-style: italic;
+    font-family: 'Poppins', sans-serif;
+    text-align:center
+}
+
+.ck-button{
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    -webkit-transition-duration: 0.4s;
+    transition-duration: 0.4s;
+    /* padding: 0.5rem 1.5rem; */
+    border: none;
+    background: none;
+    cursor: pointer;
+    font-size: 3em;
+    width:272px;
+}
+
+.ck-button input:checked + span {
+    -webkit-transition-duration: 0.4s;
+    transition-duration: 0.4s;
+    /* background-color:white; */
+    color:#ffce42ff;
+}
+
+input[type="checkbox"] {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance:none;
+}
+
+/* PAGE POSITIONING */
+#mainContainer{
+    display:flex;
+    align-items: center;
+    justify-content:center;
+    height:100%;
+    flex-direction:column;
+}
+
+.sectionContainer{
+    display:flex;
+    height:100%;
+    justify-content: center;
+    flex-direction:row;
+    /* flex-wrap:wrap; */
+    width:100%;
+}
+
+.roundSectionContainer{
+    display:flex;
+    height:100%;
+    justify-content: center;
+    flex-direction:column;
+    /* flex-wrap:wrap; */
+    width:100%;
+}
+
+.leftContainer{
+    display:flex;
+    flex-direction: column;
+    height:100%;
+    width:60%;
+    justify-content:flex-start;
+    /* background-color: tomato; */
+    text-align:left;
+    align-items:flex-start;
+}
+
+#scoreDiv{
+    flex-grow:1;
+}
+
+#menu{
+    display:flex;
+    flex-direction:column;
+}
+
+#timerContainer{
+    flex-grow:1;
+}
+
+#bottomContentDiv{
+    display:flex;
+    flex-direction:column;
+    justify-content:flex-end;
+}
+
+.rightContainer{
+    flex-direction:column;
+    display:flex;
+    height:100%;
+    width:40%;
+    /* justify-content:flex-end; */
+    justify-content: space-around;
+    /* background-color: black; */
+    text-align:right;
+    /* align-items:flex-end; */
+}
+
+.marginContentLeft{
+    margin: 52px 0px 0px 90px;                             
+}
+
+.marginContentRight{
+    margin:80px 90px 70px;
+    display:flex;
+    flex-direction:column;
+    height:100%;
+    align-items:flex-end;
+
+}
+
+#checkboxContainer{
+    display: flex;
+    flex-direction: column;
+    margin-top:9%;
+}
+
+#bottomRightContent{
+    display:flex;
+    flex-direction:column;
+    justify-content:flex-end;
+    align-items:flex-end;
+    flex-grow:1;
+}
+
+.topContainer{
+    display:flex;
+    height:100%;
+    /* flex-direction:row; */
+}
+
+.bottomContainer{
+    display:flex;
+    flex-direction:row;
+    justify-content:space-around;
+    margin: 36px 65px 62px 87px;
+}
+
+
+/* SECTION VISIBILITY */
+#part1{
+    display:flex;
+}
+
+#part2{
+    display:none;
+}
+
+#part3{
+    display:none;
+}
+
+#part35{
+    display:none;
+}
+
+#part4{
+    display:none;
+}
+
+#part5{
+    display:none;
+}
+
+/* TYPE */
+.mainTitle{
+    font-size:3em;
+    font-weight:700;
+    margin-bottom:1%;
+}
+
+.subTitle{
+    font-size:2em;
+    font-weight:600;
+    font-style:italic;
+    margin:0;
+}
+
+#subInstructions{
+    font-style:normal;
+    margin: 0 0 0 5%;
+}
+
+#subPart4{
+    /* margin:6% 0 0 0; */
+    font-size:2.5em;
+}
+
+#rewardText{
+    font-size:1.5em;
+}
+
+#rewardText2{
+    font-size:1.5em;
+    margin-top:4%;
+}
+
+#subPart4Disclaimer{
+    margin:6% 0 0 0;
+    font-size:1.5em;
+}
+
+#rewardLink{
+    font-size:1.5em;
+    margin-top:4%;
+}
+
+.subPart5{
+    font-size:3.5em;
+}
+
+
+
+.dareText{
+    font-size:3.5em;
+    font-weight:700;
+    margin-top:9%;
+}
+
+.description{
+    font-size:1.5em;
+    font-style:normal;
+    font-weight:600;
+}
+
+#waiting4{
+    display:flex;
+}
+
+.scoreLargeText{
+    font-size:25em;
+    margin:0;
+}
+
+#scoreText1{
+    font-size:3.5em;
+    margin-bottom:0;
+}
+
+#scoreText2{
+    font-size:3.5em;
+    margin-bottom:0;
+}
+
+#scoreSubText{
+    font-size:2.5em;
+    margin-top:1%;
+}
+
+#time{
+    font-size:3.5em;
+}
+
+#time2{
+    font-size:3.5em;
+}
+
+#time3{
+    font-size:3.5em;
+}

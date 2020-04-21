@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+  <head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Ready?</title>
+    <link href="https://fonts.googleapis.com/css?family=Poppins:600,600i,700,800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+  </head>
+
+  <body>
+    <div id = "mainContainer">
+        <!-- 1. Intro  -->
+        <div class = "sectionContainer" id = "part1">
+            <div class = "leftContainer">
+                <div class = "marginContentLeft">
+                    <h1 class = "mainTitle" id = "titlePart1">ready for a dare?</h1>
+                    <h2 class = "subTitle" id = "subPart1">don't worry, there will be rewards</h2>
+                    <h2 class = "subTitle" id = "subPart1">you'll need access to a phone or personal computer to play</h2>
+                </div>
+            </div>
+            <div class = "rightContainer">
+                <div class = "marginContentRight">
+                    <div id = "bottomRightContent">
+                        <p class = "button" id = "learnMore" onclick = "learnMore()">what is this?</p>
+                        <p class = "button" id = "button2" onclick= "openWindow()">begin</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 2. CLOSE DISCLAIMER -->
+        <div class = "sectionContainer" id = "partDisclaimer" syle = "display:none">
+            <div class = "leftContainer">
+                <div class = "marginContentLeft">
+                    <h1 class = "mainTitle" id = "titlePart1">the game has started</h1>
+                    <h2 class = "subTitle" id = "subPart1">feel free to close this tab</h2>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script src="script2.js"></script>
+</body>

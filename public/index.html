@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html>
+  <head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Ready?</title>
+    <link href="https://fonts.googleapis.com/css?family=Poppins:600,600i,700,800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+  </head>
+
+  <body>
+    <div id = "mainContainer">
+        <!-- 1. Intro  -->
+        <div class = "sectionContainer" id = "part1">
+            <div class = "leftContainer">
+                <div class = "marginContentLeft">
+                    <h1 class = "mainTitle" id = "titlePart1">ready for a dare?</h1>
+                    <h2 class = "subTitle" id = "subPart1">don't worry, there will be rewards</h2>
+                    <h2 class = "subTitle" id = "subPart1">you'll need access to a phone or personal computer to play</h2>
+                </div>
+            </div>
+            <div class = "rightContainer">
+                <div class = "marginContentRight">
+                    <div id = "bottomRightContent">
+                        <p class = "button" id = "learnMore" onclick = "learnMore()">what is this?</p>
+                        <p class = "button" id = "button2">begin</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 1.5 About -->
+        <div class = "sectionContainer" id = "learnMorePart" style="display:none">
+            <div class = "leftContainer">
+                <div class = "marginContentLeft">
+                    <h1 class = "mainTitle" id = "titlePart1">ABOUT
+                    </h1>
+                    <h2 class = "description">This game is one of the two main components of my Capstone project, <a href = "https://simulacra.myportfolio.com/" target="_blank"><u><i> Simulacra</i></u></a>, which is an exploration of people's relationship with social media and their use of it.</h2>
+                    <h2 class = "description">By challenging players to complete dares of varying difficulty in their social media accounts, this game invites people to reconsider their attachment to their online personas (such as their Instagram and Facebook profiles) and have a sense of how these have the potential to unconsciously frame their own identities. </h2>
+                    <h2 class = "description"><a href = "https://maricalderon.net/" target="_blank"> - María Paula Calderón, B.A. Interactive Media</a></h2>
+                    
+                </div>
+            </div>
+            <div class = "rightContainer">
+                <div class = "marginContentRight">
+                    <div id = "bottomRightContent">
+                        <p class = "button" id = "learnMore" onclick = "back()">back</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 2. Players -->
+        <div class = "sectionContainer" id = "part2">
+            <div class = "leftContainer">
+                <div class = "marginContentLeft">
+                    <h1 class = "mainTitle" id = "titlePart1">who's playing?</h1>
+                    <h2 class = "subTitle" id = "subPart1">if you’re by yourself, find another player</h2>
+                    <h2 class = "subTitle" id = "subPart1">feel free to collaborate and help each other throughout the game
+                    </h2>
+
+                    <h1 class = "mainTitle" id = "titlePart1">players</h1>
+                    <ul class = "subTitle" id="messages"></ul>
+                </div>
+            </div>
+            <div class = "rightContainer">
+                <div class = "marginContentRight">
+                    <div id = "bottomRightContent">
+                        <form id = "myForm" action="">
+                        <input type="text"id="m" placeholder="type your name" autocomplete="off" /><button id = "button3" style = "display:none">submit</button>
+                        </form>
+                        <h2 class = "subTitle" id = "waiting">waiting for other player to connect...</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+         <!-- 3. Social Media Profiles  -->
+         <div class = "sectionContainer" id = "part3">
+            <div class = "leftContainer">
+                <div class = "marginContentLeft">
+                    <h1 class = "mainTitle" id = "titlePart1">which of these do you use?</h1>
+                    <h2 class = "subTitle" id = "subPart1">select all that apply</h2>
+                    
+                    <div id = "checkboxContainer">
+                        <label class ="ck-button">
+                            <input id = "checkFace" type="checkbox" value=""><span>Facebook</span>
+                        </label>
+
+                        <label class ="ck-button">
+                            <input id = "checkInsta" type="checkbox" value=""><span>Instagram</span>
+                        </label>
+                        
+                        <label class ="ck-button">
+                            <input id = "checkSnap" type="checkbox" value=""><span>Snapchat</span>
+                        </label>                   
+                        
+                        <label class ="ck-button">
+                            <input id = "checkTwit" type="checkbox" value=""><span>Twitter</span>
+                        </label>
+                    
+                        <label class ="ck-button" id = "noSocial">
+                            <input id = "checkSocial" type="checkbox" value=""><a href = "none.html"><span>None</span></a>
+                        </label>   
+                    </div>                
+                </div>
+            </div>
+            <div class = "rightContainer">
+                <div class = "marginContentRight">
+                    <div id = "bottomRightContent">
+                        <p class = "button" id = "button4">continue</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 3.5 USER DOESN'T HAVE SOCIAL MEDIA -->
+        <div class = "sectionContainer" id = "part35">
+            <h1 class = "mainTitle" id = "titlePart35">Well, this is awkward..</h1>
+            <h2 class = "subTitle" id = "subPart35">This game of dare can only be played if you have any of the listed social media platforms.</h2>
+            <h2 class = "subTitle" id = "subPart35">You can still be part of the game, though. </h2>
+            <h2 class = "subTitle" id = "subPart35">Just go over to the Handle Box and follow the instructions there.</h2>
+            <br>
+            <h2 class = "subTitle" id = "subPart35"> Feel free to still grab a reward. It's on us!</h2>
+            <button id = "button-45">BACK TO HOME</button>
+        </div>
+
+        <!-- 4. INSTRUCTIONS   -->
+        <div class = "sectionContainer" id = "part4">
+            <div class = "leftContainer">
+                <div class = "marginContentLeft">
+                    <h1 class = "mainTitle" id = "titlePart1">you and <span id = "nameHTML"></span> will do 3 rounds of dares, each with increasing difficulty 
+                    </h1>
+                    <h2 class = "subTitle" id = "subPart4">for each round you can:</h2>
+                    <h2 class = "subTitle" id = "subInstructions">- complete the dare</h2>
+                    <h2 class = "subTitle" id = "subInstructions">- not complete the dare</h2>
+                    <h2 class = "subTitle" id = "subInstructions">- swap dares with each other</h2>
+                    <h2 class = "subTitle" id = "subInstructions">- give up completely</h2>
+                    <h2 class = "subTitle" id = "subPart4Disclaimer">remember: the more dares you complete, the better the reward</h2>
+                </div>
+            </div>
+            <div class = "rightContainer">
+                <div class = "marginContentRight">
+                    <div id = "bottomRightContent">
+                        <h2 class = "subTitle" id = "waiting4">waiting for other player...</h2>
+                        <p class = "button" id = "button5">start game</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 5. Round 1: Dare  -->
+        <div class = "roundSectionContainer" id = "part5">
+            <div class = "topContainer">
+                <div class = "leftContainer">
+                    <div class = "marginContentLeft">
+                        <h1 class = "mainTitle" id = "titlePart1">ROUND 1</h1>
+                        <h2 class = "dareText" id = "dareRound1"></h2>
+                    </div>
+                </div>
+                <div class = "rightContainer">
+                    <div class = "marginContentRight">
+                        <div id = "timerContainer">
+                            <span id="time"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class = "bottomContainer">
+                <div id = "buttonSection">
+                    <p class = "button" id = "dareCompleted" onclick = "dareCompletedFunction()">i did it</p>
+                    <p class = "button" id = "dareNotCompleted" onclick = "dareNotCompletedFunction()">i won't do it</p>
+                </div>
+                <div id = "bottomContentDiv">
+                    <p class = "button" id = "swap1" onclick = "swapDares()">swap dares</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- 6. Round 2: Dare  -->
+        <div class = "roundSectionContainer" id = "part6" style = "display:none">
+            <div class = "topContainer">
+                <div class = "leftContainer">
+                    <div class = "marginContentLeft">
+                        <h1 class = "mainTitle" id = "titlePart1">ROUND 2</h1>
+                        <h2 class = "dareText" id = "dareRound2"></h2>
+                    </div>
+                </div>
+                <div class = "rightContainer">
+                    <div class = "marginContentRight">
+                        <div id = "timerContainer">
+                            <span id="time2"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class = "bottomContainer">
+                <div id = "buttonSection">
+                    <p class = "button" id = "dareCompleted2" onclick = "dareCompletedFunction()">i did it</p>
+                    <p class = "button" id = "dareNotCompleted2" onclick = "dareNotCompletedFunction()">i won't do it</p>
+                </div>
+                <div id = "bottomContentDiv">
+                    <p class = "button" id = "swap2" onclick = "swapDares()">swap dares</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- 7. Round 3: Dare  -->
+        <div class = "roundSectionContainer" id = "part7" style = "display:none">
+            <div class = "topContainer">
+                <div class = "leftContainer">
+                    <div class = "marginContentLeft">
+                        <h1 class = "mainTitle" id = "titlePart1">ROUND 3</h1>
+                        <h2 class = "dareText" id = "dareRound3"></h2>
+                    </div>
+                </div>
+                <div class = "rightContainer">
+                    <div class = "marginContentRight">
+                        <div id = "timerContainer">
+                            <span id="time3"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class = "bottomContainer">
+                <div id = "buttonSection">
+                    <p class = "button" id = "dareCompleted3" onclick = "dareCompletedFunction()">i did it</p>
+                    <p class = "button" id = "dareNotCompleted3" onclick = "dareNotCompletedFunction()">i won't do it</p>
+                </div>
+                <div id = "bottomContentDiv">
+                    <p class = "button" id = "swap3" onclick = "swapDares()">swap dares</p>
+                </div>                
+            </div>
+        </div>
+
+
+        <!-- 8. SCORE SECTION  -->
+        <div class = "sectionContainer" id = "scorePart" style = "display:none">
+            <div class = "leftContainer">
+                <div class = "marginContentLeft">
+                    <h1 class = "mainTitle" id = "titlePart1">FINAL NUMBER OF DARES COMPLETED</h1>
+                    <h2 class = "scoreLargeText" id = "scoreText3"></h2>
+                </div>
+            </div>
+            <div class = "rightContainer">
+                <div class = "marginContentRight">
+                    <div id = "timerContainer">
+                        <p class = "button" id = "again" onclick = "restart()">play again</p> 
+                        <p class = "button" id = "learnMore2" onclick = "learnMore()">what was this?</p>
+                    </div>
+                    <h2 class = "subTitle" id = "rewardText">you get THIS reward</h2>
+                    <h2 class = "subTitle" id = "rewardText2">more instructions written here</h2>
+                   <a href = "#" id = "rewardLink" target="_blank"><u>get reward</u></a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Dare Completed  -->
+        <div class = "sectionContainer" id = "dareCompletedPart" style = "display:none">
+            <div class = "leftContainer">
+                <div class = "marginContentLeft">
+                    <h1 class = "mainTitle" id = "titlePart1">ROUND <span id = "currentRoundView3"></span></h1>
+                    <h1 class = "subPart5"><span id = "checkpointText1"></span></h1>
+                    
+                    <h1 class = "subPart5"><span id = "checkpointText2"></span></h1>
+                    <!-- <h2 class = "mainTitle" id = "subPart5">congratulations!</h2> -->
+                    <!-- <h2 class = "mainTitle" id = "subPart5">round <span id = "currentRoundView"></span> completed</h2> -->
+                    <!-- <h2 class = "mainTitle" id = "subPart5">ready for the next round?</h2> -->
+                </div>
+            </div>
+            <div class = "rightContainer">
+                <div class = "marginContentRight">
+                   <div id = "scoreDiv">
+                    <h2 class = "mainTitle" id = "scoreText1">/3</h2>
+                    <h2 class = "mainTitle" id = "scoreSubText">completed dares</h2>
+                   </div>
+                    <div id = "menu">
+                        <p class = "button" id = "button6" onclick = "nextRound()">continue</p>
+                        <p class = "button" id = "giveUp1" onclick = "giveUp()">give up</p>
+                    </div>
+                    <h1 class = "subTitle" id = "waitingDareText" style = "display:block">waiting for <span id = "nameHTML2"></span> to complete their dare...
+                    </h1>
+                </div>
+            </div>
+        </div>
+
+        <!-- Dare NOT Completed  -->
+        <div class = "sectionContainer" id = "dareNotCompletedPart" style = "display:none">
+            <div class = "leftContainer">
+                <div class = "marginContentLeft">
+                    <h1 class = "mainTitle" id = "titlePart1">ROUND <span id = "currentRoundView2"></span></h1>    
+                    <h1 class = "subPart5"><span id = "checkpointText3"></span></h1>
+                    <h1 class = "subPart5"><span id = "checkpointText4"></span></h1>          
+                    <!-- <h2 class = "mainTitle" id = "subPart5">you can do this!</h2>
+                    <h2 class = "mainTitle" id = "subPart5">you can still get a reward if you complete the next dare</h2> -->
+                    <!-- <h2 class = "mainTitle" id = "subPart5">ready?</h2> -->
+                </div>
+            </div>
+            <div class = "rightContainer">
+                <div class = "marginContentRight">
+                    <div id = "scoreDiv">
+                        <h2 class = "mainTitle" id = "scoreText2"></h2>
+                        <h2 class = "mainTitle" id = "scoreSubText">completed dares</h2>
+                    </div>
+                    <div id = "menu2">
+                        <p class = "button" id = "button7" onclick = "nextRound()">continue</p>
+                        <p class = "button" id = "giveUp2" onclick = "giveUp()">give up</p>
+                    </div>
+                    <h1 class = "subTitle" id = "waitingDareText2" style = "display:block">waiting for <span id = "nameHTML3"></span> to complete their dare...
+                    </h1>
+                </div>
+            </div>
+        </div>
+
+        <!-- GIVE UP PAGE -->
+        <div class = "sectionContainer" id = "giveUpPart" style = "display:none">
+            <div class = "leftContainer">
+                <div class = "marginContentLeft">
+                    <h1 class = "mainTitle" id = "titlePart1">It's unfortunate that you both weren't able to finish the game. 
+                    </h1>
+                    <h2 class = "subTitle" id = "subPart4">Even so, feel free to try again or read more about this project and its purpose. </h2>
+                </div>
+            </div>
+            <div class = "rightContainer">
+                <div class = "marginContentRight">
+                    <div id = "bottomRightContent">
+                        <p class = "button" id = "again" onclick = "restart()">try again</p>
+                        <p class = "button" id = "learnMore" onclick = "learnMore()">learn more</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        
+    </div>
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
