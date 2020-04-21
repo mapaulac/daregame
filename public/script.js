@@ -308,12 +308,6 @@ function changeRoundText(){
 function getName(){
     userName = document.getElementById("m").value;
     console.log("person's name: " + userName);
-    let output = document.getElementById("nameHTML");
-    let output2 = document.getElementById("nameHTML2");
-    let output3 = document.getElementById("nameHTML3");
-    output.innerHTML = userName;
-    output2.innerHTML = userName;
-    output3.innerHTML = userName;
 }
 
 //WEBSOCKET 
@@ -344,6 +338,12 @@ $(function () {
     socket.on('broadcast', function(msg){//saving other name
         otherUser = msg;
         console.log("other user: " + msg);
+        let output = document.getElementById("nameHTML");
+        let output2 = document.getElementById("nameHTML2");
+        let output3 = document.getElementById("nameHTML3");
+        output.innerHTML = otherUser;
+        output2.innerHTML = otherUser;
+        output3.innerHTML = otherUser;
     });
 
     //continuing to next phase once 2 names have been submitted
