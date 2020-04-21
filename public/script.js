@@ -289,12 +289,12 @@ function changeRoundText(){
         rewardDescription.innerHTML = "Congratulations, you've won an exclusive desktop background!";
         rewardDescription2.innerHTML = "If you want to uncover what the complete background text is, play again and complete more than 1 dare.";
         document.getElementById("rewardLink").style.display = "flex";
-        link.setAttribute("href", "https://drive.google.com/file/d/1xhitMpiGFnirsIQGTlNRfXatHaYP8XYa/view?usp=sharing");
+        link.setAttribute("href", "https://drive.google.com/file/d/1PtUcmU1RwvKt2UK8_r6fC3NhHoYOW8bN/view?usp=sharing");
     } else if (userScore == 2){
         rewardDescription.innerHTML = "Congratulations, you've won an exclusive desktop background!";
         rewardDescription2.innerHTML = "If you want to uncover what the complete background text is, play again and complete all the dares.";
         document.getElementById("rewardLink").style.display = "flex";
-        link.setAttribute("href", "https://drive.google.com/file/d/1LWhnxKICLLDj5CBd_SAv2a1YH1Zanrh4/view?usp=sharing");
+        link.setAttribute("href", "https://drive.google.com/file/d/1a7eKHqNVF6KXoVlr2DdZVxgWYC2nvPc4/view?usp=sharing");
     } else if (userScore == 3){
         rewardDescription.innerHTML = "Congratulations, you've won an exclusive desktop background!";
         rewardDescription2.innerHTML = "Since you got the best reward, you also have access to the rest of the rewards!";
